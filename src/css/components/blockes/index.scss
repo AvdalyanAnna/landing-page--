@@ -1,0 +1,43 @@
+@import "questions";
+
+.section-item {
+  padding: 100px 0 200px;
+  @media screen and (max-width: 1440px) {
+    padding: 75px 0 150px;
+  }
+  @media screen and (max-width: 1280px) {
+    padding: 50px 0 100px;
+  }
+  @media screen and (max-width: 961px) {
+    padding: 40px 0 80px;
+  }
+  @media screen and (max-width: 740px) {
+    padding: 25px 0 50px;
+  }
+  &__title{
+    font-family: Helvetica Neue World;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 61px;
+    color: #000;
+    margin-bottom: 48px;
+
+    @media screen and (max-width: 1440px) {
+      font-size: 36px;
+      line-height: 46px;
+      margin-bottom: 36px;
+    }
+    @media screen and (max-width: 1280px) {
+      font-size: 25px;
+      line-height: 1.4;
+    }
+    @media screen and (max-width: 961px) {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+    @media screen and (max-width: 740px) {
+      font-size: 16px;
+      margin-bottom: 16px;
+    }
+  }
+}

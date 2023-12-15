@@ -1,0 +1,45 @@
+.btn {
+  font-family: Helvetica Neue World;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  border-radius: 12px;
+  padding: 10px 24px;
+  border: 0;
+  transition: all 0.3s;
+  @media screen and (max-width: 1440px ) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: 950px ) {
+    font-size: 10px;
+    padding: 8px 17px;
+    border-radius: 8px;
+  }
+  @media screen and (max-width: 1205px ) {
+    font-size: 8px;
+    border-radius: 4px;
+    padding: 5px 10px;
+  }
+
+  @media screen and (max-width: 740px ) {
+    font-size: 16px;
+    padding: 14px 15px;
+    width: 100%;
+  }
+
+  &-black {
+    color: #fff;
+    background: #353535;
+    border: 1.5px solid #353535;
+    box-shadow: 0 6px 34px rgba(53, 53, 53, 0.12);
+
+    &:hover {
+      background: #fff;
+      color: #353535;
+    }
+  }
+
+  &-header {
+    //height: 46px;
+  }
+}
