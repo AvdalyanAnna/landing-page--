@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Gulp with TailwindCSS v3</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+</head>
+<body class="">
+<header class="header section">
+    <div class="wrapper">
+        <div class="header_inner">
+            <a class="header_logo" href="https://karpett.am/" title="Karpett" rel="home">
+                <img src="img/logo.png" alt="karpett"></a>
+            <div class="header_left">
+                <div class="header_menu">
+                    <a href="#Professionalmats" class="header_menu-item">Ֆունկցիոնալ
+                        գորգեր</a>
+                    <a href="#Howit" class="header_menu-item">Ինչպե՞ս ենք
+                        աշխատում</a>
+                    <a href="#Cost" class="header_menu-item">Արժեքի հաշվիչ</a>
+                    <a href="#Partners" class="header_menu-item">Գործընկերներ</a>
+                    <a href="#important" class="header_menu-item">Ֆունկցիոնալ
+                        գորգերի կարևորությունը</a>
+                </div>
+                <div class="header_menu">
+                    <button class="btn btn-black btn-header" data-slide="Cost">Գրանցել պատվեր</button>
+                </div>
+            </div>
+            <div class="header-burger">
+                <svg viewBox="0 0 64 32">
+                    <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                    <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                    <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="section questions section-item">
+    <div class="wrapper">
+        <h2 class="section-item__title">Հաճախ տրվող հարցեր</h2>
+        <div class="questions_cont">
+            <div class="questions_item accordeon">
+                <h3 class="questions_item_title">Որտե՞ղ կարող են կիրառվել Karpett գորգերը</h3>
+                <div class="accordeon-text">
+                    <p class="questions_item_text">Karpett Ֆունկցիոնալ գորգերը հիմնականում դրվում
+                        են <strong><em>մուտքի դռների մոտ</em></strong>, քանի որ կեղտի և խոնավության 70% -ը դրսից է
+                        ներթափանցում: Սակայն դրանք կարող են լիարժեք գործածվել նաև <strong><em>անցումային գոտիներում</em></strong>,
+                        <em><strong>հաղորդակցման</strong></em> և <em><strong>աշխատանքային գոտիներում</strong></em>,
+                        <strong><em>աղտոտվող գոտիներում</em></strong> — որտեղ կա շատ շարժ՝ հետևաբար նաև շատ
+                        աղտոտվածություն:</p>
+                </div>
+
+            </div>
+            <div class="questions_item accordeon">
+                <h3 class="questions_item_title">Որտե՞ղ են գորգերն արտադրվում</h3>
+                <div class="accordeon-text">
+                    <p class="questions_item_text">Գորգերը 100%-ով արտադրվում են <strong><em>Բելգիայում</em></strong>՝
+                        համապատասխանելով որակի և անվտանգության կանոնների եվրոպական
+                        <a href="https://canceltimesharegeek.com/how-many-marriott-points-for-a-free-stay/" >չափանիշներին</a>:
+                    </p>
+
+                </div>
+
+            </div>
+            <div class="questions_item accordeon">
+                <h3 class="questions_item_title">Ինչպե՞ս են մաքրվում և փոխվում Karpett ֆունկցիոնալ գորգերը:</h3>
+                <div class="accordeon-text">
+                    <p class="questions_item_text">Յուրաքանչյուր գորգ, որը մենք վարձակալում ենք,
+                        ռոտացվում է շաբաթական մեկ կամ երկու անգամ: Աղտոտված գորգերը փոխարինվում են մաքուր գորգերով:Դրանք
+                        մաքրվում են <strong><em>հատուկ քիմիական նյութերով</em></strong>, լվացվում <strong><em>200-500 կգ
+                            տարողությամբ արդյունաբերական լվացքի մեքենաներում</em> </strong>և արդյունահանվում
+                        <em><strong>250 Գ-ի տակ</strong></em> ՝ լավագույն արդյունքի հասնելու համար:</p>
+
+                </div>
+
+            </div>
+            <div class="questions_item accordeon">
+                <h3 class="questions_item_title">Հաճախորդը գնում թե՞ վարձակալում է գորգը</h3>
+                <div class="accordeon-text">
+                    <p class="questions_item_text">
+                        <strong>Ստանդարտ ֆունկցիոնալ գորգերը</strong>— Տրամադրվում են <strong><em>անվճար</em></strong>:
+                        Մեր հաճախորդները վճարում են որոշակի գումար՝ սպասարկման ծառայությունների համար:
+                    </p>
+                    <p class="questions_item_text">
+                        <strong>Բրենդավորված գորգերը</strong> — հաճախորդը <strong><em>պատվիրում և գնում է</em></strong>,
+                        քանի որ դրանք պատրաստվում են միայն տվյալ հաճախորդի օգտագործման համար
+                        (լոգոն, հատուկ չափը և այլն):
+                        Այդ գորգերը չեն կարող օգտագործվել այլ հաճախորդների կողմից: Բրենդային Karpett ֆունկցիոնալ գորգերը
+                        վաճառվում են հաճախորդին, և նա վճարում է սպասակման համար՝ -15% զեղչով:</p>
+                </div>
+            </div>
+            <div class="questions_item accordeon">
+                <h3 class="questions_item_title">Ինչո՞վ են տարբերվում Karpett ֆունկցիոնալ գորգերը մյուս գորգերից:</h3>
+                <div class="accordeon-text">
+                    <p class="questions_item_text">Karpett ֆունկցիոնալ գորգերն ունեն, և բարձր
+                        ջերմությամբ ֆիքսված մանվածք: Սա իդեալական է դարձնում գորգերը՝ խոնավությունը, կեղտը և փոշին
+                        կլանելու համար: Գորգերն ունեն նաև 100% նիտրիլային կաուչուկի պաստառ, որը հարթ է, չսահող, երբեք չի
+                        կոտրվում, չի ճեղքվում:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="footer section">
+    <div class="wrapper">
+        <div class="footer_inner">
+            <div class="footer_left">
+                <a href="https://karpett.am/" title="Karpett" rel="home">
+                    <img class="footer_logo" src="img/logo.png" alt=""></a>
+                <p class="footer_left_title"> Ֆունկցիոնալ գորգեր</p>
+                <p class="footer_left_text">Կարպետը Հայաստանում առաջին ընկերությունն է, որը որպես գորգերի վարձույթի
+                    ծառայություն առաջարկում է գորգեր՝ պրոֆեսիոնալ լուծումներով:</p>
+                <div class="footer_left_social">
+                    <a href="">
+                        <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.4776 3.01659C24.1901 1.90799 23.3429 1.0349 22.2673 0.738602C20.3177 0.200195 12.5 0.200195 12.5 0.200195C12.5 0.200195 4.68232 0.200195 2.73266 0.738602C1.65706 1.03495 0.80992 1.90799 0.522399 3.01659C0 5.02598 0 9.21838 0 9.21838C0 9.21838 0 13.4108 0.522399 15.4202C0.80992 16.5288 1.65706 17.3655 2.73266 17.6618C4.68232 18.2002 12.5 18.2002 12.5 18.2002C12.5 18.2002 20.3177 18.2002 22.2673 17.6618C23.3429 17.3655 24.1901 16.5288 24.4776 15.4202C25 13.4108 25 9.21838 25 9.21838C25 9.21838 25 5.02598 24.4776 3.01659ZM9.94316 13.0248V5.41199L16.4772 9.21848L9.94316 13.0248Z"
+                                  fill="#0D3DE6"></path>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.8286 0H1.36714C0.612857 0 0 0.595536 0 1.32661V17.0734C0 17.8045 0.612857 18.4 1.36714 18.4H17.8286C18.5829 18.4 19.2 17.8045 19.2 17.0734V1.32661C19.2 0.595536 18.5829 0 17.8286 0ZM5.80286 15.7714H2.95714V6.99036H5.80714V15.7714H5.80286ZM4.38 5.79107C3.46714 5.79107 2.73 5.08054 2.73 4.20982C2.73 3.33911 3.46714 2.62857 4.38 2.62857C5.28857 2.62857 6.03 3.33911 6.03 4.20982C6.03 5.08464 5.29286 5.79107 4.38 5.79107ZM16.47 15.7714H13.6243V11.5C13.6243 10.4814 13.6029 9.17125 12.1457 9.17125C10.6629 9.17125 10.4357 10.2802 10.4357 11.4261V15.7714H7.59V6.99036H10.32V8.18964H10.3586C10.74 7.49964 11.67 6.77268 13.0543 6.77268C15.9343 6.77268 16.47 8.59214 16.47 10.9579V15.7714Z"
+                                  fill="#A5B1DF"></path>
+                        </svg>
+                    </a>
+                    <a href="">
+                        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.991 4.28911C16.0022 4.45966 16.0022 4.63024 16.0022 4.80079C16.0022 10.0028 12.3728 15.9967 5.73928 15.9967C3.69562 15.9967 1.79715 15.351 0.200195 14.2302C0.490561 14.2668 0.76972 14.279 1.07126 14.279C2.75752 14.279 4.30983 13.6577 5.54943 12.5978C3.96364 12.5612 2.6347 11.4282 2.17683 9.86881C2.4002 9.90533 2.62353 9.92971 2.85807 9.92971C3.18192 9.92971 3.5058 9.88096 3.8073 9.79572C2.15452 9.43021 0.914886 7.84647 0.914886 5.93378V5.88507C1.39507 6.17746 1.95349 6.3602 2.54533 6.38453C1.57375 5.67792 0.93723 4.47185 0.93723 3.10737C0.93723 2.37642 1.11588 1.70637 1.42859 1.12159C3.20423 3.50941 5.87327 5.06877 8.86613 5.23936C8.81031 4.94697 8.77679 4.64243 8.77679 4.33786C8.77679 2.16931 10.3849 0.402832 12.3839 0.402832C13.4225 0.402832 14.3605 0.877957 15.0194 1.64547C15.8346 1.47492 16.6164 1.14597 17.3088 0.69522C17.0407 1.60894 16.4712 2.37646 15.723 2.86373C16.4489 2.77849 17.1524 2.55916 17.8001 2.25462C17.3088 3.03428 16.6946 3.72867 15.991 4.28911Z"
+                                  fill="#A5B1DF"></path>
+                        </svg>
+                    </a>
+                    <a href="https://facebook.com/karpettarmenia">
+                        <svg width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.77071 10.2999L10.2685 7.11472H7.15593V5.04775C7.15593 4.17634 7.59073 3.32693 8.98477 3.32693H10.3998V0.61509C10.3998 0.61509 9.1157 0.399902 7.88795 0.399902C5.32464 0.399902 3.64914 1.92546 3.64914 4.68715V7.11472H0.799805V10.2999H3.64914V17.9999H7.15593V10.2999H9.77071Z"
+                                  fill="#A5B1DF"></path>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/karpett.am">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.20235 4.68748C6.70518 4.68748 4.69094 6.70217 4.69094 9.1999C4.69094 11.6976 6.70518 13.7123 9.20235 13.7123C11.6995 13.7123 13.7138 11.6976 13.7138 9.1999C13.7138 6.70217 11.6995 4.68748 9.20235 4.68748ZM9.20235 12.1336C7.58861 12.1336 6.26935 10.8179 6.26935 9.1999C6.26935 7.58187 7.58469 6.26624 9.20235 6.26624C10.82 6.26624 12.1354 7.58187 12.1354 9.1999C12.1354 10.8179 10.8161 12.1336 9.20235 12.1336ZM14.9506 4.5029C14.9506 5.08806 14.4794 5.55541 13.8983 5.55541C13.3133 5.55541 12.846 5.08414 12.846 4.5029C12.846 3.92167 13.3172 3.4504 13.8983 3.4504C14.4794 3.4504 14.9506 3.92167 14.9506 4.5029ZM17.9386 5.57112C17.8718 4.16123 17.5498 2.91236 16.5172 1.88342C15.4885 0.854482 14.2399 0.532447 12.8303 0.461757C11.3776 0.379284 7.02321 0.379284 5.57045 0.461757C4.16481 0.52852 2.91622 0.850555 1.88358 1.8795C0.850943 2.90844 0.532906 4.1573 0.462231 5.56719C0.379777 7.02028 0.379777 11.3756 0.462231 12.8287C0.52898 14.2386 0.850943 15.4874 1.88358 16.5164C2.91622 17.5453 4.16088 17.8674 5.57045 17.938C7.02321 18.0205 11.3776 18.0205 12.8303 17.938C14.2399 17.8713 15.4885 17.5492 16.5172 16.5164C17.5459 15.4874 17.8679 14.2386 17.9386 12.8287C18.021 11.3756 18.021 7.0242 17.9386 5.57112ZM16.0617 14.3878C15.7555 15.1575 15.1626 15.7506 14.3891 16.0608C13.2308 16.5203 10.4824 16.4143 9.20235 16.4143C7.92235 16.4143 5.16996 16.5164 4.01561 16.0608C3.24603 15.7545 2.65315 15.1615 2.34297 14.3878C1.88358 13.2293 1.98959 10.4802 1.98959 9.1999C1.98959 7.91962 1.88751 5.16661 2.34297 4.012C2.64922 3.24225 3.24211 2.64924 4.01561 2.33899C5.17389 1.8795 7.92235 1.98553 9.20235 1.98553C10.4824 1.98553 13.2347 1.88342 14.3891 2.33899C15.1587 2.64531 15.7516 3.23833 16.0617 4.012C16.5211 5.17054 16.4151 7.91962 16.4151 9.1999C16.4151 10.4802 16.5211 13.2332 16.0617 14.3878Z"
+                                  fill="#A5B1DF"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer_middle">
+                <div id="nav_menu-2" class="widget widget_nav_menu"><p class="footer_middle_title">Արագ հղումներ</p>
+                    <div class="menu-menu-1-container">
+                        <ul id="menu-menu-2" class="menu">
+                            <li id="menu-item-306" class="footer_middle_item">
+                                <a href="#Professionalmats">Ֆունկցիոնալ գորգեր</a>
+                            </li>
+                            <li id="menu-item-307" class="footer_middle_item">
+                                <a href="#Howit">Ինչպե՞ս ենք աշխատում</a>
+                            </li>
+                            <li id="menu-item-308" class="footer_middle_item">
+                                <a href="#Cost">Արժեքի հաշվիչ</a>
+                            </li>
+                            <li id="menu-item-309" class="footer_middle_item">
+                                <a href="#Partners">Գործընկերներ</a>
+                            </li>
+                            <li id="menu-item-310" class="footer_middle_item">
+                                <a href="#important">Ֆունկցիոնալ գորգերի կարևորությունը</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_right">
+                <p class="footer_right_title">Կապ</p>
+                <div class="footer_right_adress">
+                    <img src="img/iconPhone.png">
+                    <p>Խաղաղ Դոնի փ. 1/17, ք. Երևան</p>
+                </div>
+                <div class="footer_right_adress">
+                    <img src="img/iconPhone-1.png">
+                    <p><a href="tel:+37433612619">+374 33 612 619</a></p>
+                </div>
+                <div class="footer_right_worktime"><p>Աշխատանքային ժամեր - Երկուշաբթիից Ուրբաթ 09:00 -
+                    17:00</p></div>
+            </div>
+            <div class="footer_bottom">
+                <p>Karpett - © 2023 Բոլոր իրավունքները պաշպանված են</p>
+                <p> Design and Development by
+                    <a href="https://intdevels.com/" target="_blank">
+                        intDevels
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+<script src="./js/scripts.js"></script>
+</body>
+</html>
