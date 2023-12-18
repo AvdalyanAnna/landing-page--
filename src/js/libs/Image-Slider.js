@@ -159,4 +159,4 @@
         return this;
     }
 
-})(jQuery, window, document, undefined);//libraries like jquery etc
+})(jQuery, window, document, undefined);

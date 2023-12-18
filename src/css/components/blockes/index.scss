@@ -82,6 +82,8 @@
 @import "goals";
 @import "state";
 @import "request";
+@import "clients";
+@import "calculator";
 
 @media screen and (max-width: 740px){
   .puncts_list-item {
@@ -111,4 +113,28 @@
 
 b{
   font-weight: 700;
+}
+#branded_text {
+  font-family: $font;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 300;
+  font-style: italic;
+  color: #000;
+  @media screen and (max-width: 1280px) {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  @media screen and (max-width: 961px) {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
+.blue {
+  color: red;
+  font-size: 1.2em;
+  font-family: sans-serif;
+}
+.bold {
+  font-weight: bold;
 }
