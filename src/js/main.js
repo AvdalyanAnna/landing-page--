@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $("#vid")[0].play();
     $('.header-burger').on('click', function () {
         $('.header-burger, .header-menu').toggleClass('active');
         $('.header_left').slideToggle();
