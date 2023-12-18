@@ -1,7 +1,3 @@
-window.addEventListener("DOMContentLoaded", () => {
-    console.log("Loaded Scripts");
-});
-
 $(document).ready(function () {
     $('.header-burger').on('click', function () {
         $('.header-burger, .header-menu').toggleClass('active');
@@ -30,7 +26,6 @@ $(document).ready(function () {
         }
     }
     $(window).scroll(function() {
-        console.log(checkVisible($('.red_message').first()))
         if(checkVisible($('.red_message').first()) && !checkVisible($('.blue_message').first())) {
             $('.blue_message').first().removeClass('active')
             $('.red_message').first().addClass('active')
@@ -92,6 +87,11 @@ $(document).ready(function () {
     })
     $('.message_block').mouseleave(function() {
         $(this).removeClass('active')
+    })
+    $('.slide').on('click', function() {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $('#' + $(this).attr('data-slide')).offset().top
+        }, 500);
     })
 
     $('.questions_item_title').on('click', function () {
@@ -623,7 +623,6 @@ $(document).ready(function () {
 // 		if($('.size_block .select').children('.dropdown').css('display') != 'none') {
 // 			$('.size_block .select').children('.dropdown').slideToggle(200)
 // 		}
-// 		console.log(e.target)
 // 	})
         $('.week_block .select').on('click', function() {
             if($(this).children('.dropdown').css('display') == 'none') {
@@ -660,4 +659,54 @@ $(document).ready(function () {
             init()
         })
     }
+
+    $('.init').on('submit', function (e){
+        e.preventDefault();
+        $('.wpcf7-form-control-wrap').removeClass('error')
+        $('.wpcf7-form-control-wrap .error-text').remove()
+        $('.wpcf7-response-output').removeClass('blue');
+        $('.wpcf7-response-output').html('')
+        let data =  $(".init").serializeArray()
+        $.ajax({
+            type: "POST",
+            url: "mail.php",
+            data: data,
+            dataType: "json",
+            encode: true,
+        }).done(function (info) {
+            let keys = Object.keys(info.errors)
+            if(info.errors){
+                for(let i =0;i<keys.length ;i++){
+                    $(`.${keys[i]}`).addClass('error')
+                    let html = `<span class="error-text">${info.errors[keys[i]]}</span>`
+                    $(`.${keys[i]}`).append(html)
+                }
+            }
+            if(keys.length > 0){
+                $('.wpcf7-response-output').addClass('blue');
+            }
+            $('.wpcf7-response-output').html(info.message)
+        });
+
+    });
+
+    $(document).on('click', 'a[href^="#"]', function(e) {
+        // target element id
+        var id = $(this).attr('href');
+
+        // target element
+        var $id = $(id);
+        if ($id.length === 0) {
+            return;
+        }
+
+        // prevent standard hash navigation (avoid blinking in IE)
+        e.preventDefault();
+
+        // top position relative to the document
+        var pos = $id.offset().top;
+
+        // animated top scrolling
+        $('body, html').animate({scrollTop: pos});
+    });
 })

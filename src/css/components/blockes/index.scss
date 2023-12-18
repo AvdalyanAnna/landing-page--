@@ -138,3 +138,32 @@ b{
 .bold {
   font-weight: bold;
 }
+
+.error-text{
+  color: red;
+  font-size: 12px;
+  line-height: 1.2;
+  position: relative;
+  padding-left: 15px;
+  display: inline-block;
+  &:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url(/img/Vector.png);
+    background-size: cover;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+  }
+}
+
+
+
+.wpcf7-response-output{
+  font-size: 16px;
+  line-height: 1.2;
+  margin-top: 20px;
+}
