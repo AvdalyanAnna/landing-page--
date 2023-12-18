@@ -1,4 +1,4 @@
-  .section-item {
+.section-item {
   padding: 100px 0;
   @media screen and (max-width: 1440px) {
     padding: 75px 0;
@@ -14,7 +14,7 @@
   }
 
   &__title {
-    font-family: Helvetica Neue World;
+    font-family: $font;
     font-weight: 700;
     font-size: 48px;
     line-height: 61px;
@@ -40,7 +40,75 @@
     }
   }
 }
+.big_img {
+  width: 100%;
+  height: auto;
+
+  video {
+    min-width: 100%;
+    max-height: 924px;
+    max-width: 100%;
+    object-fit: fill;
+    @media screen and (max-width: 1440px) {
+      max-height: 693px;
+    }
+    @media screen and (max-width: 1280px) {
+      max-height: 493px;
+    }
+    @media screen and (max-width: 961px) {
+      max-height: 370px;
+    }
+    @media screen and (max-width: 740px) {
+      max-height: none;
+    }
+    }
+  @media screen and (max-width: 1440px) {
+    margin-bottom: 150px;
+  }
+  @media screen and (max-width: 1280px) {
+    margin-bottom: 100px;
+  }
+  @media screen and (max-width: 961px) {
+    margin-bottom: 80px;
+  }
+}
 
 
 @import "questions";
 @import "vision";
+@import "works";
+@import "important";
+@import "intro";
+@import "goals";
+@import "state";
+@import "request";
+
+@media screen and (max-width: 740px){
+  .puncts_list-item {
+    p {
+      font-family: $font;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 17px;
+      letter-spacing: 0.005em;
+      color: #000;
+    }
+
+    span {
+      min-width: 8px;
+      min-height: 8px;
+      max-height: 8px;
+      max-width: 8px;
+      border-radius: 50px;
+      background-color: #132be2;
+      display: block;
+      margin-right: 8px;
+      position: relative;
+      top: 8px;
+    }
+  }
+}
+
+b{
+  font-weight: 700;
+}

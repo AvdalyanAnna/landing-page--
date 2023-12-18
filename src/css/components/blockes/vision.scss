@@ -99,7 +99,7 @@
 
     &_title {
       margin-bottom: 25px;
-      font-family: Helvetica Neue World,sans-serif;
+      font-family: $font;
       font-weight: 700;
       font-size: 24px;
       letter-spacing: 0.5px;
@@ -128,7 +128,7 @@
       }
     }
     &_text {
-      font-family: Helvetica Neue World,sans-serif;
+      font-family: $font;
       font-weight: 400;
       font-size: 14px;
       line-height: 22px;
