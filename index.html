@@ -4,7 +4,11 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Gulp with TailwindCSS v3</title>
+    <title>Karpett — Կարպետը Հայաստանում առաջին ընկերությունն է, որը որպես գորգերի վարձույթի ծառայություն առաջարկում է գորգեր՝ պրոֆեսիոնալ լուծումներով:</title>
+    <link rel="icon" href="img/cropped-karpett-favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="img/cropped-karpett-favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="img/cropped-karpett-favicon-180x180.png">
+    <meta name="msapplication-TileImage" content="img/cropped-karpett-favicon-270x270.png">
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
 </head>
 <body class="">
@@ -40,7 +44,6 @@
 </header>
 
 <main>
-
     <div class="section intro section-item">
     <div class="wrapper">
         <div class="intro_inner">
@@ -196,8 +199,11 @@
             <div class="calculator_products">
                 <div class="calculator_products_item" data-id="gray">
                     <div class="calculator_products_item-imgBlock">
-                        <img class="calculator_products_item-img" src="img/calc-1.png">
-
+                        <picture>
+                            <source media="(max-width: 740px)" srcset="img/calc-mob-1.png">
+                            <source media="(min-width: 740px)" srcset="img/calc-1.png">
+                            <img class="calculator_products_item-img" src="img/calc-1.png">
+                        </picture>
                         <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0)">
                                 <path d="M10.3573 19.8112C15.4006 19.8112 19.489 15.5183 19.489 10.2228C19.489 4.92736 15.4006 0.634521 10.3573 0.634521C5.314 0.634521 1.22559 4.92736 1.22559 10.2228C1.22559 15.5183 5.314 19.8112 10.3573 19.8112Z"
@@ -224,8 +230,11 @@
                 </div>
                 <div class="calculator_products_item" data-id="brown">
                     <div class="calculator_products_item-imgBlock">
-                        <img class="calculator_products_item-img" src="img/calc-2.png">
-
+                        <picture>
+                            <source media="(max-width: 740px)" srcset="img/calc-mob-2.png">
+                            <source media="(min-width: 740px)" srcset="img/calc-2.png">
+                            <img class="calculator_products_item-img" src="img/calc-2.png">
+                        </picture>
                         <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0)">
                                 <path d="M10.3573 19.8112C15.4006 19.8112 19.489 15.5183 19.489 10.2228C19.489 4.92736 15.4006 0.634521 10.3573 0.634521C5.314 0.634521 1.22559 4.92736 1.22559 10.2228C1.22559 15.5183 5.314 19.8112 10.3573 19.8112Z"
@@ -252,7 +261,11 @@
                 </div>
                 <div class="calculator_products_item" data-id="branded">
                     <div class="calculator_products_item-imgBlock">
-                        <img class="calculator_products_item-img" src="img/calc-3.png">
+                        <picture>
+                            <source media="(max-width: 740px)" srcset="img/calc-mob-3.png">
+                            <source media="(min-width: 740px)" srcset="img/calc-3.png">
+                            <img class="calculator_products_item-img" src="img/calc-3.png">
+                        </picture>
                         <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0)">
                                 <path d="M10.3573 19.8112C15.4006 19.8112 19.489 15.5183 19.489 10.2228C19.489 4.92736 15.4006 0.634521 10.3573 0.634521C5.314 0.634521 1.22559 4.92736 1.22559 10.2228C1.22559 15.5183 5.314 19.8112 10.3573 19.8112Z"
@@ -745,8 +758,8 @@
                                                                                aria-required="true" aria-invalid="false"
                                                                                placeholder="Հեռախոսահամարը"></span><br>
                             <input type="submit" value="Հայցել պատվեր"
-                                   class="wpcf7-form-control wpcf7-submit send_request_btn"><span
-                                class="ajax-loader"></span>
+                                   class="wpcf7-form-control wpcf7-submit send_request_btn">
+                            <span class="ajax-loader"></span>
                             <p></p>
                         </div>
                         <div class="wpcf7-response-output" aria-hidden="true"></div>
