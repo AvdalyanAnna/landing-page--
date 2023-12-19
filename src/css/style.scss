@@ -1,4 +1,8 @@
 $font:Helvetica Neue World,sans-serif;
+@import "fonts";
 @import "libs";
 @import "./tailwind";
 @import "./main";
+button{
+  text-transform: uppercase;
+}

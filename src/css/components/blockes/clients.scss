@@ -1,5 +1,5 @@
 .clients {
-  padding: 182px 0 0;
+  //padding: 182px 0 0;
 
   .swiper-slide {
     width: fit-content;
@@ -29,11 +29,13 @@
 }
 
 .clients-list {
-  max-height: 47.22px;
+  max-height: 100px;
   display: flex;
   align-items: center;
   background: transparent;
-
+  @media screen and (max-width: 961px) {
+      max-height: 75px;
+  }
   .str_move {
     display: flex;
     align-items: center;
@@ -71,10 +73,16 @@
 .clients-item img {
   display: block;
   width: 100%;
-  min-width: 150px;
-  height: 47px;
+  min-width: 200px;
+  height: 100px;
   object-fit: contain;
+  @media screen and (max-width: 961px) {
+      min-width: 150px;
+      height: 75px;
+  }
+
   @media screen and (max-width: 740px) {
-    min-width: 100px;
+      min-width: 100px;
+      height: 50px;
   }
 }

@@ -49,7 +49,7 @@
       display: none;
       position: absolute;
       background: #fff;
-      top: calc(100% + 0px);
+      top: calc(90px   + 0px);
       left: 0;
       min-width: 100%;
       max-width: 100%;
@@ -141,10 +141,10 @@
     }
 
     svg {
-      width: 64px;
+      width: 48px;
       height: 48px;
       top: -15px;
-      left: -14px;
+      left: -9px;
       stroke: var(--color);
       stroke-width: 3px;
       stroke-linecap: round;

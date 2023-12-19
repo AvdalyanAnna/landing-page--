@@ -170,7 +170,6 @@
       @media screen and (max-width: 740px) {
         width: 100%;
         margin-right: 0;
-        margin-bottom: 16px;
       }
     }
 
@@ -200,7 +199,7 @@
       font-size: 8px;
       margin-right: 0;
       width: 100%;
-      margin-bottom: 8px;
+      margin-bottom: 0;
     }
   }
 
@@ -259,5 +258,56 @@
     margin: 0;
     padding: 0;
     border: 0;
+  }
+}
+.ajax-loader {
+  &.active{
+    display: inline-block;
+    background-color: #23282d;
+    opacity: 0.75;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: 100%;
+    padding: 0;
+    margin: 0 24px;
+    position: relative;
+    visibility: visible;
+    &::before{
+      content: '';
+      position: absolute;
+      background-color: #fbfbfc;
+      top: 4px;
+      left: 4px;
+      width: 6px;
+      height: 6px;
+      border: none;
+      border-radius: 100%;
+      transform-origin: 8px 8px;
+      animation-name: spin;
+      animation-duration: 1000ms;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+  }
+
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.wpcf7-form-control-wrap{
+  @media screen and (max-width: 740px) {
+    margin-bottom: 16px;
+  }
+}
+.wpcf7-response-output{
+  @media screen and (max-width: 740px) {
+    font-size: 12px !important;
   }
 }

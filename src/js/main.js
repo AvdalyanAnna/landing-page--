@@ -668,6 +668,8 @@ $(document).ready(function () {
         $('.wpcf7-response-output').removeClass('blue');
         $('.wpcf7-response-output').html('')
         let data =  $(".init").serializeArray()
+        $('.ajax-loader').removeClass('active')
+        $('.ajax-loader').addClass('active')
         $.ajax({
             type: "POST",
             url: "mail.php",
@@ -675,6 +677,7 @@ $(document).ready(function () {
             dataType: "json",
             encode: true,
         }).done(function (info) {
+            $('.ajax-loader').removeClass('active')
             let keys = Object.keys(info.errors)
             if(info.errors){
                 for(let i =0;i<keys.length ;i++){
@@ -687,7 +690,7 @@ $(document).ready(function () {
                 $('.wpcf7-response-output').addClass('blue');
             }
             $('.wpcf7-response-output').html(info.message)
-        });
+        }).;
 
     });
 

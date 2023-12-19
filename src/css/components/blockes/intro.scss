@@ -1,5 +1,20 @@
 .intro {
   padding-top: 200px;
+  @media screen and (max-width: 1440px) {
+    padding-top: 150px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    padding-top: 100px;
+  }
+
+  @media screen and (max-width: 961px) {
+    padding-top: 80px;
+  }
+
+  @media screen and (max-width: 740px) {
+    padding-top: 50px;
+  }
 
   &_inner {
     align-items: stretch;
@@ -44,32 +59,34 @@
         margin-bottom: 12px;
       }
     }
-      .intro_text {
+
+    .intro_text {
       font-family: $font;
       font-weight: 500;
       font-size: 13px;
       color: #94a2b3;
       flex: 1 1 100%;
-        @media screen and (max-width: 1440px) {
-          font-size: 10px;
-          line-height: 25px;
-        }
-        @media screen and (max-width: 1280px) {
-          font-size: 9px;
-          line-height: 14px;
-        }
-        @media screen and (max-width: 961px) {
-          font-size: 8px;
-          margin-bottom: 20px;
-          line-height: 12px;
-        }
-        @media screen and (max-width: 740px) {
-          line-height: 15px;
-          font-size: 12px;
-          margin-bottom: 24px;
-        }
+      @media screen and (max-width: 1440px) {
+        font-size: 10px;
+        line-height: 25px;
+      }
+      @media screen and (max-width: 1280px) {
+        font-size: 9px;
+        line-height: 14px;
+      }
+      @media screen and (max-width: 961px) {
+        font-size: 8px;
+        margin-bottom: 20px;
+        line-height: 12px;
+      }
+      @media screen and (max-width: 740px) {
+        line-height: 15px;
+        font-size: 12px;
+        margin-bottom: 24px;
+      }
 
     }
+
     .intro_btn {
       margin-bottom: 7%;
       font-family: $font;
@@ -151,6 +168,7 @@
     @media screen and (max-width: 740px) {
       max-width: 100%;
     }
+
     .intro_btn {
       display: none;
       @media screen and (max-width: 740px) {

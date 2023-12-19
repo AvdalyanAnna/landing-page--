@@ -88,6 +88,14 @@
           font-size: 16px;
           line-height: 20px;
           color: #fff;
+          @media screen and (max-width: 1440px) {
+            font-size: 14px;
+            line-height: 18px;
+          }
+          @media screen and (max-width: 1280px) {
+            font-size: 10px;
+            line-height: 14px;
+          }
         }
 
         .text {
@@ -96,6 +104,14 @@
           font-size: 16px;
           line-height: 20px;
           color: #fff;
+          @media screen and (max-width: 1440px) {
+            font-size: 14px;
+            line-height: 18px;
+          }
+          @media screen and (max-width: 1280px) {
+            font-size: 10px;
+            line-height: 14px;
+          }
         }
 
         @media screen and (max-width: 1280px) {
@@ -106,7 +122,14 @@
         }
         @media screen and (max-width: 1440px) {
         }
-
+        @media screen and (max-width: 1440px) {
+          padding: 8px 16px;
+          width: 280px;
+        }
+        @media screen and (max-width: 1280px) {
+          padding: 6px 8px;
+          width: 200px ;
+        }
       }
 
       &.active {
@@ -190,6 +213,14 @@
           font-size: 16px;
           line-height: 20px;
           color: #fff;
+          @media screen and (max-width: 1440px) {
+            font-size: 14px;
+            line-height: 18px;
+          }
+          @media screen and (max-width: 1280px) {
+            font-size: 10px;
+            line-height: 14px;
+          }
         }
 
         .text {
@@ -198,6 +229,14 @@
           font-size: 16px;
           line-height: 20px;
           color: #fff;
+          @media screen and (max-width: 1440px) {
+            font-size: 14px;
+            line-height: 18px;
+          }
+          @media screen and (max-width: 1280px) {
+            font-size: 10px;
+            line-height: 14px;
+          }
         }
 
         @media screen and (max-width: 1440px) {
